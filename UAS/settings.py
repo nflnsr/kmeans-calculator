@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-pff$@#rd8v&+q^o94pu+fa5fx@1$n6#1#@a$w1#qj-4_yr_p$z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 
 # Application definition
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
     'staticfiles_build',
     'kmeans_project.apps.KmeansProjectConfig',
+    'kmeans_project',
+    'kmeans_project.apps',
     'django_browser_reload',
 ]
 
