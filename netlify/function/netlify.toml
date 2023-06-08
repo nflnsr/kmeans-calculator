@@ -1,4 +1,5 @@
 [build]
   command = "python manage.py collectstatic --noinput"
   publish = "staticfiles_build/static"
-  functions = "/**/*py"
+[build.environment]
+  PYTHON_VERSION = "3.8"
