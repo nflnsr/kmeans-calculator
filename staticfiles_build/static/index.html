@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelompok 8</title>
+    <style>
+      /* :root {
+        --color-light: white;
+        --color-dark: #212121;
+        --color-signal: #fab700;
+
+        --color-background: var(--color-light);
+        --color-text: var(--color-dark);
+        --color-accent: var(--color-signal);
+
+        --size-bezel: 0.5rem;
+        --size-radius: 4px;
+
+        line-height: 1.4;
+
+        font-family: "Inter", sans-serif;
+        font-size: calc(0.6rem + 0.4vw);
+        color: var(--color-text);
+        background: var(--color-background);
+        font-weight: 300;
+        padding: 0 calc(var(--size-bezel) * 3);
+      } */
+      body {
+        background-color: #f2f2f2;
+        bottom: 200px;
+      }
+      .container {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        
+        margin: 0 auto;
+        width: 50%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .container__input {
+        width: calc(100% - 23px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input {
+        width: calc(100% - 21px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #2ecc71;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #27ae60;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+      }
+      tr:hover {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Kalkulator Kmeans</h1>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="container__input">
+          <input type="text" name="data1" />
+          <input type="text" name="data2" />
+          <input type="text" name="k" />
+        </div>
+        <input type="submit" />
+        {{ form.as_p }}
+      </form>
+    </div>
+  </body>
+</html>
