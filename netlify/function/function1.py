@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 from django.views import View
-from .forms import InputForm
+from kmeans_project.forms import InputForm
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
