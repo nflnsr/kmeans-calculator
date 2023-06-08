@@ -1,5 +1,19 @@
 [build]
-  command = "python manage.py collectstatic --noinput"
-  publish = "staticfiles_build/static"
-[build.environment]
-  PYTHON_VERSION = "3.8"
+  command = "python manage.py collectstatic --noinput && yarn --cwd frontend build"
+
+[[plugins]]
+  package = "@netlify/plugin-functions"
+
+[[plugins.inputs]]
+  functions = "kmeans_project"
+
+[[plugins.inputs]]
+  functions = "UAS"
+
+[[plugins.inputs]]
+  functions = ""
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
