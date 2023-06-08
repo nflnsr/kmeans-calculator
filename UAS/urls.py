@@ -22,6 +22,4 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     path("", include("kmeans_project.urls")),
     path("kmeans_project/", include("kmeans_project.urls")),
-    path("index/", include("kmeans_project.urls")),
-    path("hasil/", include("kmeans_project.urls")),
 ]
