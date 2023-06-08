@@ -1,0 +1,4 @@
+[build]
+  command = "python manage.py collectstatic --noinput"
+  publish = "staticfiles_build/static"
+  functions = "**/*.py"

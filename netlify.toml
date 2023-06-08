@@ -1,4 +1,0 @@
-[build]
-  command = "python manage.py collectstatic --noinput"
-  publish = "netlify/functions/staticfiles_build/static"
-  functions = "netlify/functions/**/*.py"
