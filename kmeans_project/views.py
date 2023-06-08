@@ -9,6 +9,7 @@ from tkinter import filedialog
 
 # Create your views here.
 class Index(View):
+    template_name = '../templates/projects/index.html'
 
     def get(self, request):
         return render(request, '../templates/projects/index.html')
