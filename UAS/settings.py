@@ -39,10 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'staticfiles_build',
     'kmeans_project.apps.KmeansProjectConfig',
-    'kmeans_project',
-    'kmeans_project.apps',
     'django_browser_reload',
 ]
 
