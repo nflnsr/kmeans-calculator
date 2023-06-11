@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-pff$@#rd8v&+q^o94pu+fa5fx@1$n6#1#@a$w1#qj-4_yr_p$z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://kmeans-calculator.sheeess.repl.co' ,'https://*.127.0.0.1', 'https://7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co', ' https://kmeans-calculator.sheeess.repl.co']
+
+ALLOWED_HOSTS = ['*', '.vercel.app', '127.0.0.1', '7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co', 'https://kmeans-calculator.sheeess.repl.co', 'https://7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co', 'https://kmeans-calculator.sheeess.repl.co', 'https://kmeans-calculator.sheeess.repl.co/hasil/', 'https://kmeans-calculator.sheeess.repl.co/hasil', 'https://kmeans-calculator.sheeess.repl.co/hasil.html', 'https://kmeans-calculator.sheeess.repl.co/hasil/html/', 'https://7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co/hasil', 'https://7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co/hasil/', 'https://7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co/', '7fc258a9-3c21-4417-b316-8716f5104188.id.repl.co/', ' https://kmeans-calculator.sheeess.repl.co', 'https://kmeans-calculator.sheeess.repl.co']
 
 
 # Application definition
@@ -89,9 +91,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'V0yiDPIvOjTyl1iC38fu',
-        'HOST': 'containers-us-west-129.railway.app',
-        'PORT': '7763',
+        'PASSWORD': 'wZRY81YXNeKGO28b4NgR',
+        'HOST': 'containers-us-west-151.railway.app',
+        'PORT': '7718',
     }
 }
 

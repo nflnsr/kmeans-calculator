@@ -4,8 +4,7 @@ from .forms import InputForm
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
-import tkinter as tk
-from tkinter import filedialog
+
 
 # Create your views here.
 class Index(View):
@@ -13,7 +12,7 @@ class Index(View):
 
     def get(self, request):
         return render(request, '../templates/projects/index.html')
-    
+
     def post(self, request):
         if request.method == 'POST':
             form = InputForm(request.POST)
@@ -53,7 +52,11 @@ class Index(View):
                 print(l)
 
 
-                return render(request, '../templates/projects/hasil.html', {'k': k, 'l': l})
+                response = render(request, '../templates/projects/hasil.html', {'k': k, 'l': l})
+                response.set_cookie('k', k)
+                response.set_cookie('l', l)
+                return response
+
         return render(request, '../templates/projects/index.html')
 
 
